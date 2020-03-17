@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["es2017", "es2016", "es2015", "es5", "dom"],
+    "strict": true,
+    "removeComments": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "jsx": "react",
+    "noImplicitAny": false,
+    "noLib": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "preserveConstEnums": true,
+    "skipLibCheck": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "declaration": true,
+    "sourceMap": true,
+    "composite": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@this/vc": ["./src/vc/index.ts"],
+      "@this/cc": ["./src/cc/index.ts"],
+      "@this/domain": ["./src/domain/index.ts"],
+      "@this/config": ["./src/config/index.ts"],
+      "@this/definitions": ["./src/definitions/index.ts"],
+      "@this/api-client": ["./src/api/index.ts"],
+      "@this/types": ["./src/types/index.ts"],
+      "@this/utils/*": ["./src/utils/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", "scripts/*.ts", "scripts/push-tag.js"],
+  "exclude": ["node_modules", "ts-lib"]
+}

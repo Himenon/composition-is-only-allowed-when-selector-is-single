@@ -1,0 +1,7 @@
+.classname1 {
+  color: red;
+}
+
+.app {
+  composes: classname1;
+}
