@@ -1,3 +1,13 @@
+:import("./another.scss") {
+  // [rename後]: [componentのclass名]
+  anotherDescription: description;
+  anotherLabel: label;
+}
+
+.label {
+  composes: anotherLabel;
+}
+
 .classname1 {
   color: red;
 }
@@ -5,3 +15,17 @@
 .app {
   composes: classname1;
 }
+
+.description {
+  font-size: 1.4em;
+}
+
+.description2 {
+  composes: anotherDescription;
+}
+
+
+// Error!
+// .app2 .app {
+//   composes: classname1;
+// }

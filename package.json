@@ -1,5 +1,5 @@
 {
-  "name": "build-css-loader",
+  "name": "composition-is-only-allowed-when-selector-is-single",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -8,6 +8,7 @@
     "build": "yarn ts ./build.ts",
     "develop": "yarn ts ./develop.ts"
   },
+  "private": true,
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@babel/preset-env": "^7.8.7",

@@ -1,0 +1,12 @@
+.description {
+  width: 100px;
+  font-size: 2em;
+}
+
+.label {
+  .target + & {
+    margin-left: 8px;
+    cursor: pointer;
+    user-select: none;
+  }
+}
